@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400.
+.900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,
+900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="application">
+    <header>
+    <form class="search-form" id="search-form">
+        <input type="Search"  placeholder="Enter a city"
+           class="input-form" id="input-city" required />
+        <input type="submit" value="Search" class="submit-form"/>
+    
+
+    </form>
+    </header>
+        <main>
+            <div class="app-content">
+            <div>
+        <h1 id="city" ></h1>
+        <p class="content">
+            <span id="time">Saturday 12:30,</span> <span id="description">light showers</span> 
+            <br>
+            Humidity: <strong id="Humidity">68%</strong>, Wind: <strong id="windSpeed">10.29km/h </strong>
+           </p>
+            </div>
+            <div id="weatherApp"></div> 
+           <div class="temperature" id="weather-temperature"></div>
+           
+            <div class="degrees">°C </div>
+            </div>
+            </div>
+         </main>
+
+    <footer> 
+        Coded by 
+        <a href="https://github.com/Abulele75"  >Abulele Ntwanambi</a> code hosted on 
+        <a href="https://github.com/Abulele75/Weather-application">Github</a>
+         and website posted on
+        <a href="https://update-weather.netlify.app/">Netlify</a>
+    </footer>
+    </div>
+<script src="index.js"> </script>
+</body>
+</html>
