@@ -1,0 +1,180 @@
+body {
+    background-color: rgb(235, 232, 232);
+    font-family: "Roboto", sans-serif;
+}
+.application {
+    background: black;
+
+    max-width: 680px;
+    height: 500px;
+    margin: 50px auto;
+    padding : 30px;
+   border-radius: 15px;
+ 
+    box-shadow : 0 30px 50px 
+    rgb(65, 58, 109, 0.08);
+    
+   
+
+}
+.content {
+    color: white;
+}
+header {
+    border-bottom: 1px solid   rgb(8, 8, 8);
+    padding : 0 0 30px 0;
+    position:relative;
+    bottom : 10px;
+   
+  
+}
+.input-form {
+    background-color: rgb(15, 130, 165);
+    border : none;
+border-radius: 3px;
+    width: 65%;
+    padding : 18px;
+    color: white;
+    margin : 40px;
+}
+input::placeholder {
+    color: white;
+}
+.submit-form {
+    background-color:rgb(15, 130, 165); 
+    padding: 16px;
+    color : white;
+    border: none;
+   width : 17%;
+    margin-left: -35px;
+    border-radius: 3px;
+    
+}
+footer {
+  
+    padding: 30px 0 0 0 ;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    position: relative;
+    bottom : 235px;
+   
+
+   
+   
+
+    
+   
+   
+}
+a {
+    color : rgb(15, 130, 165);
+}
+.app-content {
+    display:flex;
+    justify-content: space-between;
+    position : relative;
+    bottom : 45px;
+   
+}
+main { padding : 30px 0;
+}
+#city{
+    margin: 0px;
+    font-size: 38px;
+    line-height: 48px;
+    color: white;
+}
+.temperature {
+    color: white;
+    display : flex;
+    justify-content:space-around;
+    position: relative;
+    right : 50px;
+    bottom : 10px;
+}
+.content {
+    font-size:  16px;
+    line-height : 24px;
+    font-weight: 500;
+   
+}
+.content strong {
+    color : rgb(233, 38, 70);
+}
+.temperature {
+    font-size: 50px ;
+  position: relative;
+  left : 20px;
+  top : 1px;
+    font-weight: bold;
+}
+.degrees {
+    display: flex;
+    position: relative;
+    top : 5px;
+    color: white;
+    right : 65px;
+    font-size: 25px;
+
+}
+.icon {
+    display: flex;
+    position: relative;
+    left : 100px;
+    bottom : 2px;
+    color : white;
+  width: 80px;
+
+}
+
+
+
+.weather-forecast{
+    display:flex;
+   justify-content: center;
+   margin-right: 70px;
+   
+   
+}
+
+.weather-forecast-date{
+   
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    color : white;
+    margin-left: 70px;
+   position: relative;
+   bottom: 300px;
+   
+
+    
+   
+}
+.weather-forecast-icon {
+text-align: center;
+font-size: 35px;
+margin-left: 70px;
+position: relative;
+bottom : 305px;
+}
+
+
+
+
+.weather-forecast-temperature{
+  display: flex;
+  justify-content: center;
+   text-align: center;
+    color:  rgb(233, 38, 70);
+    position:relative;
+    bottom: 300px;
+    margin-left: 70px;
+   
+}
+.temperatures{
+    padding: 0 10px;
+  
+}
+
