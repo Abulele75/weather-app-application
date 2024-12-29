@@ -1,12 +1,12 @@
 body {
-    background-color: rgb(235, 232, 232);
+    background-color: rgb(214, 212, 212);
     font-family: "Roboto", sans-serif;
 }
 .application {
     background: black;
 
-    max-width: 930px;
-    height: 500px;
+    max-width: 1100px;
+    height: 550px;
     margin: 50px auto;
     padding : 30px;
    border-radius: 15px;
@@ -21,7 +21,7 @@ body {
     color: white;
 }
 header {
-    border-bottom: 1px solid   rgb(8, 8, 8);
+    border-bottom: 1px solid   rgb(7, 7, 7);
     padding : 0 0 30px 0;
     position:relative;
     bottom : 10px;
@@ -52,12 +52,12 @@ input::placeholder {
 }
 footer {
   
-    padding: 30px 0 0 0 ;
+    color: white;
     text-align: center;
     font-size: 13px;
-    color: white;
-    position: relative;
-    bottom : 235px;
+   position: relative;
+   bottom: 110px;
+   margin : auto;
    
 
    
@@ -100,12 +100,12 @@ main { padding : 30px 0;
    
 }
 .content strong {
-    color : rgb(233, 38, 70);
+    color : rgb(15, 130, 165);
 }
 .temperature {
     font-size: 50px ;
   position: relative;
-  left : 5px;
+  right : 22px;
   top : 1px;
     font-weight: bold;
 }
@@ -114,14 +114,14 @@ main { padding : 30px 0;
     position: relative;
     top : 5px;
     color: white;
-    right : 175px;
+    right : 255px;
     font-size: 25px;
 
 }
 .icon {
     display: flex;
     position: relative;
-    left : 190px;
+    left : 220px;
     bottom : 2px;
     color : white;
   width: 80px;
@@ -134,7 +134,8 @@ main { padding : 30px 0;
     display:flex;
    justify-content: center;
    margin-right: 70px;
-   gap: -5%;
+  position: relative;
+   bottom : 30px;
    
    
 }
@@ -142,10 +143,10 @@ main { padding : 30px 0;
 .weather-forecast-date{
    
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     color : white;
-    margin-left: 70px;
+    margin-left: 50px;
    position: relative;
    bottom: 300px;
    
@@ -155,7 +156,7 @@ main { padding : 30px 0;
 }
 .weather-forecast-icon {
 text-align: center;
-font-size: 35px;
+width: 35%;
 margin-left: 70px;
 position: relative;
 bottom : 305px;
@@ -168,10 +169,11 @@ bottom : 305px;
   display: flex;
   justify-content: center;
    text-align: center;
-    color:  rgb(233, 38, 70);
+    color:  rgb(15, 130, 165);
     position:relative;
     bottom: 300px;
-    margin-left: 70px;
+    margin-left: 50px;
+    font-size: 15px;;
    
 }
 .temperatures{
