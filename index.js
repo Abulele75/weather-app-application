@@ -22,7 +22,10 @@ function UpdateWeather(response){
    humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
    windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
    temperature.innerHTML = Math.round(temperatureElement);
+
+   getForecast(response.data.city);
 }
+
 
 function formatDate (date){
     
@@ -43,7 +46,7 @@ function formatDate (date){
 
 function SearchCity (city) {
 let apiKey = "4f430cb68t0bf0b27o781c38a281438d"
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units+metric`;
 axios.get(apiUrl).then(UpdateWeather);
 }
 
@@ -55,13 +58,20 @@ function Search(event){
 SearchCity(searchInput.value);
 }
 
-function displayForecast(){
-    let forecastElement = document.querySelector("#forecast");
+function getForecast(city){
+    let apiKey = "4f430cb68t0bf0b27o781c38a281438d"
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units+metric`;
+axios.get(apiUrl).then(displayForecast);
+}
 
-    let days = [ "Sun","Mon","Tue", " Wed", "Thu", "Fri", "Sat"];
+function displayForecast(response){
+    console.log(response.data);
+    
+
+    
 
     let forecastHtml = "";
-    days.forEach(function(day) {
+    response.data.daily.forEach(function(day) {
         forecastHtml=  forecastHtml + `<div class="weather-forecast-day"> 
         <div class="weather-forecast-date">${day}</div>
         <div class="weather-forecast-icon">⛅</div>
@@ -73,6 +83,8 @@ function displayForecast(){
 
     });
 
+    let forecastElement = document.querySelector("#forecast");
+
     forecastElement.innerHTML= forecastHtml;
 
  
@@ -82,4 +94,4 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit" , Search);
 
 SearchCity("Durban");
-displayForecast();
+
